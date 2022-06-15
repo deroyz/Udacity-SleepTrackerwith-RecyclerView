@@ -44,8 +44,8 @@ class SleepNightAdapter(val clickListener: SleepNightListener) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(clickListener: SleepNightListener, item: SleepNight) {
-            binding.clickListener = clickListener
             binding.sleep = item
+            binding.clickListener = clickListener
             binding.executePendingBindings()
         }
 
